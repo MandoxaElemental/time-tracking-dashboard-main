@@ -86,13 +86,13 @@ monthly.addEventListener('click', function(){
         workPrev.innerText = lastMonth + data[0].timeframes.monthly.previous + 'hrs';
         playHour.innerText = data[1].timeframes.monthly.current + 'hrs';
         playPrev.innerText = lastMonth + data[1].timeframes.monthly.previous + 'hrs';
-        studyHour.innerText = data[2].timeframes.monthly.current + 'hr';
+        studyHour.innerText = data[2].timeframes.monthly.current + 'hrs';
         studyPrev.innerText = lastMonth + data[2].timeframes.monthly.previous + 'hrs';
         exerciseHour.innerText = data[3].timeframes.monthly.current + 'hrs';
         exercisePrev.innerText = lastMonth + data[3].timeframes.monthly.previous + 'hrs';
         socialHour.innerText = data[4].timeframes.monthly.current + 'hrs';
         socialPrev.innerText = lastMonth + data[4].timeframes.monthly.previous + 'hrs';
-        selfCareHour.innerText = data[5].timeframes.monthly.current + 'hr';
+        selfCareHour.innerText = data[5].timeframes.monthly.current + 'hrs';
         selfCarePrev.innerText = lastMonth + data[5].timeframes.monthly.previous + 'hrs';
     });
     daily.className = 'notSelected';

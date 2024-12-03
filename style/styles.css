@@ -97,7 +97,7 @@ body{
 }
 
 .stats > div{
-    padding: 30px;
+    padding: 20px;
 }
 
 .hour{
@@ -144,7 +144,7 @@ body{
 #reportBox{
     background-color: var(--clr-blue);
     border-radius: 15px;
-    height: 60%;
+    height: 65%;
 }
 
 #work{
