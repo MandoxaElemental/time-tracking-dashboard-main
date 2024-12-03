@@ -44,7 +44,10 @@ svg{
 }
 
 .reportInfo{
+    display: grid;
+    grid-template-rows: auto auto;
     padding: 40px;
+    gap: 20px;
 }
 
 #reportFor{
@@ -116,7 +119,6 @@ svg{
 
 .header-grid{
     display: grid;
-    grid-template-columns: repeat(1fr, 2);
 }
 
 #ellipsis{
@@ -130,6 +132,7 @@ svg{
 #report{
     grid-row: 1 / 3;
     background-color: var(--clr-darkBlue);
+    
 }
 
 #reportBox{
@@ -173,4 +176,26 @@ svg{
     background-image: url(/images/icon-self-care.svg);
     background-repeat: no-repeat;
     background-position: top right 20px; 
+}
+
+@media (max-width: 870px) {
+    .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 30px;
+        padding: 100px;
+    }
+
+    .reportInfo{
+        grid-template-columns: auto auto;
+        grid-template-rows: none;
+        padding: 40px;
+    }
+
+    .date{
+        grid-template-columns: repeat(3, 1fr);
+        grid-row: 1fr;
+        text-align: center;
+        font-size: 18px;
+    }
 }

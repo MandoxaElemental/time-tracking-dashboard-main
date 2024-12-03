@@ -19,25 +19,28 @@ function getData(){
     .then(response => response.json())
     .then(data => {
         console.log(data)
-        return data.timeframes
-    }
-)};
+        console.log(data[0].timeframes.daily.current)
+    })};
 
-getData();
+getData(timeframes);
 
 daily.addEventListener('click', function(){
-    workHour.innerText = 'TestTest';
-    workPrev.innerText = 'TestTest';
+    workHour.innerText = 'TestTest1';
+    workPrev.innerText = 'TestTest1';
     daily.className = 'selected';
     weekly.className = 'notSelected';
     monthly.className = 'notSelected';
 });
 weekly.addEventListener('click', function(){
+    workHour.innerText = 'TestTest2';
+    workPrev.innerText = 'TestTest2';
     daily.className = 'notSelected';
     weekly.className = 'selected';
     monthly.className = 'notSelected';
 });
 monthly.addEventListener('click', function(){
+    workHour.innerText = 'TestTest3';
+    workPrev.innerText = 'TestTest3';
     daily.className = 'notSelected';
     weekly.className = 'notSelected';
     monthly.className = 'selected';
