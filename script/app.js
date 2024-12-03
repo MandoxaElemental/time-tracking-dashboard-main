@@ -14,7 +14,20 @@ let socialPrev = document.getElementById('socialPrev');
 let selfCareHour = document.getElementById('selfCareHour');
 let selfCarePrev = document.getElementById('selfCarePrev');
 
+function getData(){
+    return fetch('../data/data.json')
+    .then(response => response.json())
+    .then(data => {
+        console.log(data)
+        return data.timeframes
+    }
+)};
+
+getData();
+
 daily.addEventListener('click', function(){
+    workHour.innerText = 'TestTest';
+    workPrev.innerText = 'TestTest';
     daily.className = 'selected';
     weekly.className = 'notSelected';
     monthly.className = 'notSelected';
