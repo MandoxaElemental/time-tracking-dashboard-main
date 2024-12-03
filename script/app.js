@@ -21,8 +21,6 @@ function getData(){
     return fetch('../data/data.json')
     .then(response => response.json())
     .then(data => {
-        console.log(data)
-        console.log(data[0].timeframes.daily.current)
         return data;
     }
 )};
