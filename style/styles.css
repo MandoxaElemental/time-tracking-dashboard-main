@@ -1,0 +1,91 @@
+:root{
+    --clr-blue: hsl(246, 80%, 60%);
+    --clr-work: hsl(15, 100%, 70%);
+    --clr-play: hsl(195, 74%, 62%);
+    --clr-study: hsl(348, 100%, 68%);
+    --clr-exercise: hsl(145, 58%, 55%);
+    --clr-social: hsl(264, 64%, 52%);
+    --clr-selfCare: hsl(43, 84%, 65%);
+    --clr-veryDarkBlue: hsl(226, 43%, 10%);
+    --clr-darkBlue: hsl(235, 46%, 20%);
+    --clr-desaturatedBlue: hsl(235, 45%, 61%);
+    --clr-paleBlue: hsl(236, 100%, 87%);
+}
+
+
+body{
+    font-family: "Rubik";
+    background-color: var(--clr-veryDarkBlue);
+    color: white;
+    font-weight: 300;
+}
+
+svg{
+    position: absolute;
+    padding-left: 15%;
+    padding-right: 10px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+    padding: 50px;
+}
+
+.grid > div {
+    border-radius: 15px;
+}
+
+.stats{
+    margin-top: 30px;
+    border-radius: 15px;
+    background-color: var(--clr-darkBlue);
+}
+
+.stats > div{
+    padding: 30px;
+}
+
+#hour{
+    font-size: 56px;
+    margin: 20px 0px;
+}
+#task{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.stats:hover{
+    background-color: #33397A;
+}
+
+#ellipsis{
+    fill: #BBC0FF;
+}
+#ellipsis:hover{
+    fill: white;
+}
+
+#report{
+    grid-row: 1 / 3;
+    background-color: var(--clr-blue);
+}
+#work{
+    background-color: var(--clr-work);
+}
+#play{
+    background-color: var(--clr-play);
+}
+#study{
+    background-color: var(--clr-study);
+}
+#exercise{
+    background-color: var(--clr-exercise);
+}
+#social{
+    background-color: var(--clr-social);
+}
+#selfCare{
+    background-color: var(--clr-selfCare);
+}
