@@ -40,7 +40,7 @@ svg{
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 30px;
-    padding: 70px;
+    padding: 100px;
 }
 
 .reportInfo{
@@ -60,7 +60,16 @@ svg{
     display: grid;
     grid-row: repeat(3,1fr);
     padding: 20px 40px;
+    margin: 0px;
     font-size: 18px;
+    font-weight: 400;
+}
+
+.selected{
+    color: white;
+}
+
+.notSelected{
     color: #7078C9;
 }
 
