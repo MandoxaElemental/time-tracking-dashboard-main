@@ -1,3 +1,26 @@
+# Time Tracker
+
+### Gianpaolo Reinares
+### 12/4/2024
+# "Project - Time Tracker"
+### Description: 
+- In this Challenge you are to recreate the prototype from the Figma provided
+- Requirements
+-- Create web representation of Prototype provided 
+-- Responsives for Desktop and Mobile Version via figma 
+-- Pull data in from the local JSON file
+-- Do not Hard Code Data on the HTML side  
+
+> Notes: 
+
+### _GitHub Repository Link:_
+[Time Tracker GitHub Repository Link](https://github.com/MandoxaElemental/time-tracking-dashboard-main)
+
+
+This has been Peer Reviewed By: 
+> Comments: 
+
+
 # Frontend Mentor - Time tracking dashboard
 
 ![Design preview for the Time tracking dashboard coding challenge](./design/desktop-preview.jpg)
