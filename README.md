@@ -15,7 +15,8 @@
 
 ### _GitHub Repository Link:_
 [Time Tracker GitHub Repository Link](https://github.com/MandoxaElemental/time-tracking-dashboard-main)
-
+### _Figma Link:_
+[Time Tracker Figma Link](https://www.figma.com/design/lWplpIO7rgDtxyexXq1lcQ/time-tracking-dashboard?node-id=0-1&t=xeJXQqzIBzqZYJGI-1)
 
 This has been Peer Reviewed By: 
 > Comments: 

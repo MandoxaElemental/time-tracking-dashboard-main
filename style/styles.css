@@ -232,9 +232,6 @@ body{
         font-size: 18px;
         padding: 10px 10px;
     }
-    .hour{
-        font-size: 32px;
-    }
     .time{
         grid-row: 1fr;
         grid-template-rows: 1fr;
@@ -245,5 +242,10 @@ body{
         justify-content: end;
         align-items: center;
         text-align: end;
+    }
+}
+@media (max-width: 500px){
+    .hour{
+        font-size: 32px;
     }
 }
