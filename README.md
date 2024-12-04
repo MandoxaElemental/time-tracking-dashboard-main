@@ -18,8 +18,10 @@
 ### _Figma Link:_
 [Time Tracker Figma Link](https://www.figma.com/design/lWplpIO7rgDtxyexXq1lcQ/time-tracking-dashboard?node-id=0-1&t=xeJXQqzIBzqZYJGI-1)
 
-This has been Peer Reviewed By: 
-> Comments: 
+This has been Peer Reviewed By: Juan Heredia
+Comments: the site looks really good, desktop, phone, and tablet display look really good, the animation is nice and everything looks like the figma pretty much.
+my only nitpicks are that: the ellipses reload the page on click, it helps to see the animation but its kinda weird that it's on the ellipses in my opinion. 
+The other nitpick is that the padding messes up the allignment on mobile S, I dont know if its neccesary but try doing the justify content center instead of padding (atleast for 325 width).
 
 
 # Frontend Mentor - Time tracking dashboard
