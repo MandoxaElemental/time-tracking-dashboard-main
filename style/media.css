@@ -1,0 +1,51 @@
+@media (max-width: 1150px){
+    .grid{
+        padding: 90px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .hour{
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 700px) {
+    .grid{
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 30px;
+    }
+
+    #name{
+        font-size: 24px;
+    }
+
+    .reportInfo{
+        grid-template-columns: auto auto;
+        grid-template-rows: none;
+        padding: 40px;
+    }
+
+    .hour{
+        font-size: 32px;
+    }
+
+    .date{
+        grid-template-columns: repeat(3, 1fr);
+        grid-row: 1fr;
+        text-align: center;
+        font-size: 18px;
+        padding: 10px 10px;
+    }
+    .time{
+        grid-row: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .previous{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        text-align: end;
+    }
+}
