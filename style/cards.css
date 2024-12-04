@@ -1,0 +1,55 @@
+
+#report{
+    grid-row: 1 / 3;
+    background-color: var(--clr-darkBlue);
+    
+}
+
+#reportBox{
+    background-color: var(--clr-blue);
+    border-radius: 15px;
+    height: 65%;
+}
+
+#work{
+    overflow: hidden;
+    background-color: var(--clr-work);
+    background-image: url(/images/icon-work.svg);
+    background-repeat: no-repeat;
+    background-position: top -10px right 20px; 
+}
+#play{
+    overflow: hidden;
+    background-color: var(--clr-play);
+    background-image: url(/images/icon-play.svg);
+    background-repeat: no-repeat;
+    background-position: top -10px right 20px; 
+}
+#study{
+    overflow: hidden;
+    background-color: var(--clr-study);
+    background-image: url(/images/icon-study.svg);
+    background-repeat: no-repeat;
+    background-position: top -10px right 20px; 
+}
+#exercise{
+    overflow: hidden;
+    background-color: var(--clr-exercise);
+    background-image: url(/images/icon-exercise.svg);
+    background-repeat: no-repeat;
+    background-position: top right 20px; 
+}
+#social{
+    overflow: hidden;
+    background-color: var(--clr-social);
+    background-image: url(/images/icon-social.svg);
+    background-repeat: no-repeat;
+    background-position: top -15px right 20px; 
+}
+#selfCare{
+    overflow: hidden;
+    background-color: var(--clr-selfCare);
+    background-image: url(/images/icon-self-care.svg);
+    background-repeat: no-repeat;
+    background-position: top -10px right 20px; 
+}

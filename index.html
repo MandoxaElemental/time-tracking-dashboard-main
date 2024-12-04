@@ -1,158 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Time tracking dashboard</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montagu+Slab:opsz,wght@16..144,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-  <link rel="stylesheet" href="style/styles.css">
-  <link rel="stylesheet" href="style/wickedcss.min.css">
-</head>
-<body>
+    <title>Frontend Mentor | Time tracking dashboard</title>
 
-  <div class="grid">
-    <div id="report">
-      <div id="reportBox">
-        <div class="reportInfo">
-          <img class="reportImg" src="./images/image-jeremy.png" alt="jeremy">
-          <div>
-            <p id="reportFor">Report for</p>
-            <p id="name">Jeremy Robson</p>
-          </div>
-        </div>
-      </div>
-      <div class="date">
-        <p id="daily" class="notSelected">Daily</p>
-        <p id="weekly" class="selected">Weekly</p>
-        <p id="monthly" class="notSelected">Monthly</p>  
-      </div>
-    </div>
-    <div id="work">
-        <div class="stats">
-          <div>
-            <div class="header-grid">            
-              <p id="task">Work</p>
-              <div class="svg">              
-                <a href="">
-                  <svg id="ellipsis" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"  fill-rule="evenodd"/></svg>
-                </a>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montagu+Slab:opsz,wght@16..144,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="stylesheet" href="style/styles.css" />
+    <link rel="stylesheet" href="style/cards.css" />
+    <link rel="stylesheet" href="style/wickedcss.min.css" />
+  </head>
+  <body>
+    <div class="centering">
+      <div class="grid">
+        
+        <!-- Report Box Start -->
+        <div id="report">
+          <div id="reportBox">
+            <div class="reportInfo">
+              <img
+                class="reportImg"
+                src="./images/image-jeremy.png"
+                alt="jeremy"
+              />
+              <div>
+                <p id="reportFor">Report for</p>
+                <p id="name">Jeremy Robson</p>
               </div>
             </div>
-            <div class="time">
-              <p id="workHour" class="hour">0hr</p>
-              <p id="workPrev" class="previous">Previous - 0hr</p>
-            </div>
+          </div>
+          <div class="date">
+            <p id="daily" class="notSelected">Daily</p>
+            <p id="weekly" class="selected">Weekly</p>
+            <p id="monthly" class="notSelected">Monthly</p>
           </div>
         </div>
-    </div>
-    <div id="play">
-      <div class="stats">
-        <div>
-          <div class="header-grid">
-            <p id="task">Play</p>
-            <div class="svg">              
-              <a href="">
-                <svg id="ellipsis" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"  fill-rule="evenodd"/></svg>
-              </a>
-            </div>
-          </div>
-          <div class="time">
-            <p id="playHour" class="hour">0hr</p>
-            <p id="playPrev" class="previous">Previous - 0hr</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="study">
-      <div class="stats">
-        <div>
-          <div class="header-grid">            
-            <p id="task">Study</p>
-            <div class="svg">              
-              <a href="">
-                <svg id="ellipsis" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"  fill-rule="evenodd"/></svg>
-              </a>
-            </div>
-          </div>
-          <div class="time">
-            <p id="studyHour" class="hour">0hr</p>
-            <p id="studyPrev" class="previous">Previous - 0hr</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="exercise">
-      <div class="stats">
-        <div>
-          <div class="header-grid">            
-            <p id="task">Exercise</p>
-            <div class="svg">              
-              <a href="">
-                <svg id="ellipsis" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"  fill-rule="evenodd"/></svg>
-              </a>
-            </div>
-          </div>
-          <div class="time">            
-            <p id="exerciseHour" class="hour">0hr</p>
-            <p id="exercisePrev" class="previous">Previous - 0hr</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="social">
-      <div class="stats">
-        <div>
-          <div class="header-grid">            
-            <p id="task">Social</p>
-            <div class="svg">              
-              <a href="">
-                <svg id="ellipsis" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"  fill-rule="evenodd"/></svg>
-              </a>
-            </div>
-          </div>
-          <div class="time">            
-            <p id="socialHour" class="hour">0hr</p>
-            <p id="socialPrev" class="previous">Previous - hr</p>
-          </div>
-        </div>        
-      </div>
-    </div>
-    <div id="selfCare">
-      <div class="stats">
-        <div>
-          <div class="header-grid">            
-            <p id="task">Self Care</p>
-            <div class="svg">              
-              <a href="">
-                <svg id="ellipsis" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"  fill-rule="evenodd"/></svg>
-              </a>
-            </div>
-          </div>
-          <div class="time">            
-            <p id="selfCareHour" class="hour">0hr</p>
-            <p id="selfCarePrev" class="previous">Previous - 0hr</p>
-          </div>
-        </div>
-      </div>
-    </div>
-</div>
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Gianpaolo Reinares</a>.
-  </div>
-  <script src="./script/app.js"></script>
-</body>
+        <!-- Work Box Start -->
+        <div id="work">
+          <div class="stats">
+            <div>
+              <div class="header-grid">
+                <p id="task">Work</p>
+                <div class="svg">
+                  <a href="">
+                    <svg
+                      id="ellipsis"
+                      width="21"
+                      height="5"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="time">
+                <p id="workHour" class="hour">0hr</p>
+                <p id="workPrev" class="previous">Previous - 0hr</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Play Box Start -->
+        <div id="play">
+          <div class="stats">
+            <div>
+              <div class="header-grid">
+                <p id="task">Play</p>
+                <div class="svg">
+                  <a href="">
+                    <svg
+                      id="ellipsis"
+                      width="21"
+                      height="5"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="time">
+                <p id="playHour" class="hour">0hr</p>
+                <p id="playPrev" class="previous">Previous - 0hr</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Study Box Start -->
+        <div id="study">
+          <div class="stats">
+            <div>
+              <div class="header-grid">
+                <p id="task">Study</p>
+                <div class="svg">
+                  <a href="">
+                    <svg
+                      id="ellipsis"
+                      width="21"
+                      height="5"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="time">
+                <p id="studyHour" class="hour">0hr</p>
+                <p id="studyPrev" class="previous">Previous - 0hr</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Exercise Box Start -->
+        <div id="exercise">
+          <div class="stats">
+            <div>
+              <div class="header-grid">
+                <p id="task">Exercise</p>
+                <div class="svg">
+                  <a href="">
+                    <svg
+                      id="ellipsis"
+                      width="21"
+                      height="5"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="time">
+                <p id="exerciseHour" class="hour">0hr</p>
+                <p id="exercisePrev" class="previous">Previous - 0hr</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social Box Start -->
+        <div id="social">
+          <div class="stats">
+            <div>
+              <div class="header-grid">
+                <p id="task">Social</p>
+                <div class="svg">
+                  <a href="">
+                    <svg
+                      id="ellipsis"
+                      width="21"
+                      height="5"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="time">
+                <p id="socialHour" class="hour">0hr</p>
+                <p id="socialPrev" class="previous">Previous - hr</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Self Care Box Start -->
+        <div id="selfCare">
+          <div class="stats">
+            <div>
+              <div class="header-grid">
+                <p id="task">Self Care</p>
+                <div class="svg">
+                  <a href="">
+                    <svg
+                      id="ellipsis"
+                      width="21"
+                      height="5"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="time">
+                <p id="selfCareHour" class="hour">0hr</p>
+                <p id="selfCarePrev" class="previous">Previous - 0hr</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Gianpaolo Reinares</a>.
+    </div>
+    <script src="./script/app.js"></script>
+  </body>
 </html>
