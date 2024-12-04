@@ -62,10 +62,13 @@ body{
     display: grid;
     grid-row: repeat(3,1fr);
     padding: 20px 40px;
-    margin: 0px;
     font-size: 18px;
     font-weight: 400;
 }
+.date > p{
+    margin: 15px;
+}
+
 
 .selected{
     color: white;
@@ -152,21 +155,21 @@ body{
     background-color: var(--clr-work);
     background-image: url(/images/icon-work.svg);
     background-repeat: no-repeat;
-    background-position: top right 20px; 
+    background-position: top -10px right 20px; 
 }
 #play{
     overflow: hidden;
     background-color: var(--clr-play);
     background-image: url(/images/icon-play.svg);
     background-repeat: no-repeat;
-    background-position: top right 20px; 
+    background-position: top -10px right 20px; 
 }
 #study{
     overflow: hidden;
     background-color: var(--clr-study);
     background-image: url(/images/icon-study.svg);
     background-repeat: no-repeat;
-    background-position: top right 20px; 
+    background-position: top -10px right 20px; 
 }
 #exercise{
     overflow: hidden;
@@ -180,14 +183,14 @@ body{
     background-color: var(--clr-social);
     background-image: url(/images/icon-social.svg);
     background-repeat: no-repeat;
-    background-position: top right 20px; 
+    background-position: top -15px right 20px; 
 }
 #selfCare{
     overflow: hidden;
     background-color: var(--clr-selfCare);
     background-image: url(/images/icon-self-care.svg);
     background-repeat: no-repeat;
-    background-position: top right 20px; 
+    background-position: top -10px right 20px; 
 }
 
 @media (max-width: 1150px){
@@ -237,5 +240,6 @@ body{
         display: flex;
         justify-content: end;
         align-items: center;
+        text-align: end;
     }
 }

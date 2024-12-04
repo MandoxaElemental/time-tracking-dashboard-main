@@ -16,6 +16,21 @@ let selfCarePrev = document.getElementById('selfCarePrev');
 let yesterday = 'Yesterday - '; 
 let lastWeek =  'Last Week - ';
 let lastMonth = 'Last Month - ';
+let report = document.getElementById('report');
+let work = document.getElementById('work');
+let play = document.getElementById('play');
+let study = document.getElementById('study');
+let exercise = document.getElementById('exercise');
+let social = document.getElementById('social');
+let selfCare = document.getElementById('selfCare');
+
+report.className = 'slideDown';
+work.className = 'slideUp';
+play.className = 'slideUp';
+study.className = 'slideUp';
+exercise.className = 'slideUp';
+social.className = 'slideUp';
+selfCare.className = 'slideUp';
 
 function getData(){
     return fetch('../data/data.json')
@@ -42,8 +57,63 @@ getData().then(data => {
         selfCarePrev.innerText = lastWeek + data[5].timeframes.weekly.previous + 'hrs';
     });
 
+    daily.addEventListener('mouseover', function(){
+        workHour.className = 'hour'
+        playHour.className = 'hour'
+        studyHour.className = 'hour'
+        exerciseHour.className = 'hour'
+        socialHour.className = 'hour'
+        selfCareHour.className = 'hour'
+        workPrev.className = 'previous'
+        playPrev.className = 'previous'
+        studyPrev.className = 'previous'
+        exercisePrev.className = 'previous'
+        socialPrev.className = 'previous'
+        selfCarePrev.className = 'previous'
+    });
+    weekly.addEventListener('mouseover', function(){
+        workHour.className = 'hour'
+        playHour.className = 'hour'
+        studyHour.className = 'hour'
+        exerciseHour.className = 'hour'
+        socialHour.className = 'hour'
+        selfCareHour.className = 'hour'
+        workPrev.className = 'previous'
+        playPrev.className = 'previous'
+        studyPrev.className = 'previous'
+        exercisePrev.className = 'previous'
+        socialPrev.className = 'previous'
+        selfCarePrev.className = 'previous'
+    });
+    monthly.addEventListener('mouseover', function(){
+        workHour.className = 'hour'
+        playHour.className = 'hour'
+        studyHour.className = 'hour'
+        exerciseHour.className = 'hour'
+        socialHour.className = 'hour'
+        selfCareHour.className = 'hour'
+        workPrev.className = 'previous'
+        playPrev.className = 'previous'
+        studyPrev.className = 'previous'
+        exercisePrev.className = 'previous'
+        socialPrev.className = 'previous'
+        selfCarePrev.className = 'previous'
+    });
+
 daily.addEventListener('click', function(){
     getData().then(data => {
+        workHour.className = 'hour fadeIn'
+        playHour.className = 'hour fadeIn'
+        studyHour.className = 'hour fadeIn'
+        exerciseHour.className = 'hour fadeIn'
+        socialHour.className = 'hour fadeIn'
+        selfCareHour.className = 'hour fadeIn'
+        workPrev.className = 'previous fadeIn'
+        playPrev.className = 'previous fadeIn'
+        studyPrev.className = 'previous fadeIn'
+        exercisePrev.className = 'previous fadeIn'
+        socialPrev.className = 'previous fadeIn'
+        selfCarePrev.className = 'previous fadeIn'
         workHour.innerText = data[0].timeframes.daily.current + 'hrs';
         workPrev.innerText = yesterday + data[0].timeframes.daily.previous + 'hrs';
         playHour.innerText = data[1].timeframes.daily.current + 'hrs';
@@ -63,6 +133,18 @@ daily.addEventListener('click', function(){
 });
 weekly.addEventListener('click', function(){
     getData().then(data => {
+        workHour.className = 'hour fadeIn'
+        playHour.className = 'hour fadeIn'
+        studyHour.className = 'hour fadeIn'
+        exerciseHour.className = 'hour fadeIn'
+        socialHour.className = 'hour fadeIn'
+        selfCareHour.className = 'hour fadeIn'
+        workPrev.className = 'previous fadeIn'
+        playPrev.className = 'previous fadeIn'
+        studyPrev.className = 'previous fadeIn'
+        exercisePrev.className = 'previous fadeIn'
+        socialPrev.className = 'previous fadeIn'
+        selfCarePrev.className = 'previous fadeIn'
         workHour.innerText = data[0].timeframes.weekly.current + 'hrs';
         workPrev.innerText = lastWeek + data[0].timeframes.weekly.previous + 'hrs';
         playHour.innerText = data[1].timeframes.weekly.current + 'hrs';
@@ -82,6 +164,18 @@ weekly.addEventListener('click', function(){
 });
 monthly.addEventListener('click', function(){
     getData().then(data => {
+        workHour.className = 'hour fadeIn'
+        playHour.className = 'hour fadeIn'
+        studyHour.className = 'hour fadeIn'
+        exerciseHour.className = 'hour fadeIn'
+        socialHour.className = 'hour fadeIn'
+        selfCareHour.className = 'hour fadeIn'
+        workPrev.className = 'previous fadeIn'
+        playPrev.className = 'previous fadeIn'
+        studyPrev.className = 'previous fadeIn'
+        exercisePrev.className = 'previous fadeIn'
+        socialPrev.className = 'previous fadeIn'
+        selfCarePrev.className = 'previous fadeIn'
         workHour.innerText = data[0].timeframes.monthly.current + 'hrs';
         workPrev.innerText = lastMonth + data[0].timeframes.monthly.previous + 'hrs';
         playHour.innerText = data[1].timeframes.monthly.current + 'hrs';
