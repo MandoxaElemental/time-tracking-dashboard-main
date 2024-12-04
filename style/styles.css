@@ -193,6 +193,7 @@ body{
 @media (max-width: 1150px){
     .grid{
         padding: 70px;
+        grid-template-columns: repeat(2, 1fr);
     }
     
     .hour{
@@ -200,7 +201,7 @@ body{
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 700px) {
     .grid{
         grid-template-columns: 1fr;
         gap: 30px;
