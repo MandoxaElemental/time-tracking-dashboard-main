@@ -138,6 +138,10 @@ body{
     fill: white;
 }
 
+.stats:has(#ellipsis:hover){
+    background-color: var(--clr-darkBlue);
+}
+
 #report{
     grid-row: 1 / 3;
     background-color: var(--clr-darkBlue);
